@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <button onclick="changePageTitleWithJS()">Change Title With JS</button>
+    <p>You can change the the title as many times as you want, without having to reload the page</p>
+    <hr>
+    <a href="./second-page.html">Navigate to the second page</a>
+    
+
+    <script>
+        // The increment is used to create a unique Page Title every time the 'Change Title' button is clicked
+        let increment = 0;
+        function changePageTitleWithJS() {
+            increment++;
+            document.title = `Home ${increment}`;
+        }
+    </script>
+</body>
+</html>
